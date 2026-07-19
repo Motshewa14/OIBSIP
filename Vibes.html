@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee&Books - Vibes 🎵</title>
+    <link rel="stylesheet" href="vibes.css" />
+</head>
+<body>
+
+    <!-- ─── NAVIGATION ─── -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">☕ <span>Coffee</span>&Books</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About</a>
+            <a href="reads.html">Reads</a>
+            <a href="vibes.html" class="active">Vibes</a>
+            <a href="#testimonials">Reviews</a>
+        </div>
+    </nav>
+
+    <!-- ─── VIBES HEADER ─── -->
+    <section class="vibes-header">
+        <span class="vibes-icon">🎵</span>
+        <h1>Our <span class="highlight">Vibes</span></h1>
+        <div class="vibes-divider"></div>
+        <p class="vibes-subtitle">
+            Good music, good books, <span class="pink-text">good energy.</span> 🎶
+        </p>
+    </section>
+
+    <!-- ─── QR CODE SECTION ─── -->
+    <section class="qr-section">
+        <div class="qr-container">
+            <div class="qr-left">
+                <span class="qr-icon">📱</span>
+                <h2>Scan. Request. <span class="pink-text">Vibe.</span></h2>
+                <p>
+                    Found on every table — scan the <span class="pink-text">QR code</span> 
+                    to request a song that matches your mood!
+                </p>
+                <p>
+                    Whether you're reading, studying, or just chilling with friends — 
+                    <span class="pink-text">set the vibe</span> with your favorite track.
+                </p>
+                <div class="qr-features">
+                    <span>🎵 Request a song</span>
+                    <span>📖 Match the book</span>
+                    <span>💕 Set the mood</span>
+                    <span>🎶 Curated playlist</span>
+                </div>
+                <a href="#requestForm" class="qr-btn">🎵 Request a Song Now</a>
+            </div>
+            <div class="qr-right">
+                <div class="qr-code-box">
+                    <div class="qr-code">
+                        <span class="qr-symbol">⬛</span>
+                        <span class="qr-symbol">⬜</span>
+                        <span class="qr-symbol">⬛</span>
+                        <span class="qr-symbol">⬛</span>
+                        <span class="qr-symbol">⬜</span>
+                        <span class="qr-symbol">⬛</span>
+                        <span class="qr-symbol">⬜</span>
+                        <span class="qr-symbol">⬛</span>
+                        <span class="qr-symbol">⬛</span>
+                        <span class="qr-symbol">⬜</span>
+                        <span class="qr-symbol">⬛</span>
+                        <span class="qr-symbol">⬛</span>
+                        <span class="qr-symbol">⬛</span>
+                        <span class="qr-symbol">⬜</span>
+                        <span class="qr-symbol">⬛</span>
+                        <span class="qr-symbol">⬜</span>
+                        <span class="qr-symbol">⬛</span>
+                        <span class="qr-symbol">⬛</span>
+                        <span class="qr-symbol">⬜</span>
+                        <span class="qr-symbol">⬛</span>
+                        <span class="qr-symbol">⬜</span>
+                        <span class="qr-symbol">⬛</span>
+                        <span class="qr-symbol">⬛</span>
+                        <span class="qr-symbol">⬜</span>
+                        <span class="qr-symbol">⬛</span>
+                        <span class="qr-symbol">⬛</span>
+                        <span class="qr-symbol">⬜</span>
+                        <span class="qr-symbol">⬛</span>
+                        <span class="qr-symbol">⬜</span>
+                        <span class="qr-symbol">⬛</span>
+                        <span class="qr-symbol">⬛</span>
+                        <span class="qr-symbol">⬜</span>
+                        <span class="qr-symbol">⬛</span>
+                        <span class="qr-symbol">⬛</span>
+                        <span class="qr-symbol">⬜</span>
+                        <span class="qr-symbol">⬛</span>
+                        <span class="qr-symbol">⬜</span>
+                        <span class="qr-symbol">⬛</span>
+                        <span class="qr-symbol">⬛</span>
+                        <span class="qr-symbol">⬜</span>
+                        <span class="qr-symbol">⬛</span>
+                    </div>
+                    <p class="qr-label">Scan me! 📸</p>
+                    <p class="qr-sub-label">or visit coffeeandbooks.com/request</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── NOW PLAYING ─── -->
+    <section class="now-playing">
+        <div class="now-playing-content">
+            <span class="now-playing-icon">🎶</span>
+            <div>
+                <h3>Currently Playing</h3>
+                <p class="song-title">"Coffee & Books" <span class="artist">— Curated Playlist</span></p>
+                <p class="song-mood">🎵 Chill Acoustic • Indie Folk • Lo-fi Beats</p>
+            </div>
+            <div class="now-playing-badge">
+                <span class="pulse-dot"></span>
+                <span>Live</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── REQUEST FORM ─── -->
+    <section class="request-form" id="requestForm">
+        <div class="form-container">
+            <span class="form-icon">🎵</span>
+            <h2>Request a <span class="highlight">Song</span></h2>
+            <div class="form-divider"></div>
+            <p class="form-subtitle">
+                What's your vibe today? Request a song and we'll play it! 💕
+            </p>
+
+            <form class="song-request-form" id="songForm">
+                <div class="form-group">
+                    <label for="songName">🎶 Song Name</label>
+                    <input type="text" id="songName" placeholder="e.g. Blinding Lights" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="artistName">🎤 Artist</label>
+                    <input type="text" id="artistName" placeholder="e.g. The Weeknd" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="mood">😊 Mood / Vibe</label>
+                    <select id="mood" required>
+                        <option value="">Select your vibe...</option>
+                        <option value="chill">🍃 Chill & Relaxed</option>
+                        <option value="happy">☀️ Happy & Uplifting</option>
+                        <option value="sad">💔 Sad & Emotional</option>
+                        <option value="energetic">⚡ Energetic & Pumped</option>
+                        <option value="nostalgic">🕰️ Nostalgic & Retro</option>
+                        <option value="romantic">💕 Romantic & Love</option>
+                        <option value="focus">📖 Focus & Study</option>
+                        <option value="acoustic">🎸 Acoustic & Indie</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">💬 Why this song? (optional)</label>
+                    <textarea id="message" rows="3" placeholder="Share why you want this song played... reading a sad book? celebrating? just vibing?"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>📱 How are you requesting?</label>
+                    <div class="request-options">
+                        <label class="option-label">
+                            <input type="radio" name="method" value="qr" checked />
+                            📸 Scanned QR Code on my table
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="method" value="online" />
+                            💻 Online from home
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="method" value="in-store" />
+                            ☕ In-store at the counter
+                        </label>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn">🎵 Request Song</button>
+            </form>
+
+            <div class="thank-you-message" id="thankYouMessage" style="display: none;">
+                <span class="thank-you-icon">🎉</span>
+                <h3>Request Sent! 💕</h3>
+                <p>
+                    We'll play your song soon! Keep an ear out for 
+                    <span class="pink-text">"<span id="requestedSong"></span>"</span> 
+                    by <span class="pink-text"><span id="requestedArtist"></span></span>.
+                </p>
+                <p class="thank-you-sub">
+                    📞 Don't forget to visit the Teller Booth to vent about your book!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── PLAYLIST PREVIEW ─── -->
+    <section class="playlist-preview">
+        <div class="playlist-content">
+            <h3>🎶 Currently Spinning</h3>
+            <div class="playlist-grid">
+                <div class="playlist-item">
+                    <span class="play-icon">▶</span>
+                    <div>
+                        <p class="playlist-song">"Coffee & Books"</p>
+                        <p class="playlist-artist">— Curated Playlist</p>
+                    </div>
+                    <span class="playlist-mood">🎵 Chill</span>
+                </div>
+                <div class="playlist-item">
+                    <span class="play-icon">▶</span>
+                    <div>
+                        <p class="playlist-song">"Sunday Morning"</p>
+                        <p class="playlist-artist">— Maroon 5</p>
+                    </div>
+                    <span class="playlist-mood">☀️ Happy</span>
+                </div>
+                <div class="playlist-item">
+                    <span class="play-icon">▶</span>
+                    <div>
+                        <p class="playlist-song">"Until I Found You"</p>
+                        <p class="playlist-artist">— Stephen Sanchez</p>
+                    </div>
+                    <span class="playlist-mood">💕 Romantic</span>
+                </div>
+                <div class="playlist-item">
+                    <span class="play-icon">▶</span>
+                    <div>
+                        <p class="playlist-song">"Sweater Weather"</p>
+                        <p class="playlist-artist">— The Neighbourhood</p>
+                    </div>
+                    <span class="playlist-mood">🍃 Chill</span>
+                </div>
+                <div class="playlist-item">
+                    <span class="play-icon">▶</span>
+                    <div>
+                        <p class="playlist-song">"Yellow"</p>
+                        <p class="playlist-artist">— Coldplay</p>
+                    </div>
+                    <span class="playlist-mood">🕰️ Nostalgic</span>
+                </div>
+                <div class="playlist-item">
+                    <span class="play-icon">▶</span>
+                    <div>
+                        <p class="playlist-song">"We Found Love"</p>
+                        <p class="playlist-artist">— Rihanna</p>
+                    </div>
+                    <span class="playlist-mood">⚡ Energetic</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── FOOTER ─── -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>☕ Coffee&Books</h3>
+                <p>Where great coffee meets great music and even better books.</p>
+            </div>
+
+            <div class="footer-social">
+    <span>📸 Follow us:</span>
+    <a href="https://instagram.com/nonhleko_">
+        <i class="fab fa-instagram"></i> Instagram
+    </a>
+    <a href="https://tiktok.com/@nonhleko_">
+        <i class="fab fa-tiktok"></i> TikTok
+    </a>
+    <a href="https://youtube.com/@nonhleko_">
+        <i class="fab fa-youtube"></i> YouTube
+    </a>
+</div>
+        </div>
+        <div class="footer-bottom">
+            © 2026 Coffee&Books. All rights reserved. 
+        </div>
+    </footer>
+
+    <!-- ─── SCRIPT ─── -->
+    <script>
+        document.getElementById('songForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const song = document.getElementById('songName').value;
+            const artist = document.getElementById('artistName').value;
+
+            document.getElementById('requestedSong').textContent = song;
+            document.getElementById('requestedArtist').textContent = artist;
+
+            document.getElementById('songForm').style.display = 'none';
+            document.getElementById('thankYouMessage').style.display = 'block';
+        });
+    </script>
+
+</body>
+</html>

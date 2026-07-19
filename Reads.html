@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee&Books - Reads 📖</title>
+    <link rel="stylesheet" href="reads.css" />
+</head>
+<body>
+
+    <!-- ─── NAVIGATION ─── -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">☕ <span>Coffee</span>&Books</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About</a>
+        
+        </div>
+    </nav>
+
+    <!-- ─── READS HEADER ─── -->
+    <section class="reads-header">
+        <span class="reads-icon">📖</span>
+        <h1>Our <span class="highlight">Reads</span></h1>
+        <div class="reads-divider"></div>
+        <p class="reads-subtitle">
+            Popular <span class="pink-text">BookTok</span> favorites — come borrow one! 💕
+        </p>
+    </section>
+
+    <!-- ─── FILTER BAR ─── -->
+    <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">📚 All Books</button>
+        <button class="filter-btn" data-filter="available">✅ Available</button>
+        <button class="filter-btn" data-filter="unavailable">❌ Borrowed</button>
+    </div>
+
+
+    <!-- ─── BOOKS GRID ─── -->
+    <div class="books-grid" id="booksGrid">
+
+        <!-- ─── BOOK 1: It Ends With Us (Available) ─── -->
+        <div class="book-card" data-status="available">
+            <span class="book-icon">💔</span>
+            <h3>It Ends With Us</h3>
+            <p class="book-author">Colleen Hoover</p>
+            <p class="book-description">
+                A powerful story about love, resilience, and breaking the cycle of abuse. Lily Bloom navigates a complicated relationship while confronting her painful past.
+            </p>
+            <div class="book-tags">
+                <span class="tag-booktok">#BookTok</span>
+                <span>Romance</span>
+                <span>Contemporary</span>
+            </div>
+            <div class="availability available">
+                <span class="dot"></span> Available to borrow
+            </div>
+        </div>
+
+        <!-- ─── BOOK 2: Verity (Unavailable) ─── -->
+        <div class="book-card" data-status="unavailable">
+            <span class="book-icon">🕵️</span>
+            <h3>Verity</h3>
+            <p class="book-author">Colleen Hoover</p>
+            <p class="book-description">
+                A dark, twisty thriller. A struggling writer is hired to complete a bestselling author's series — but uncovers chilling secrets in the process.
+            </p>
+            <div class="book-tags">
+                <span class="tag-booktok">#BookTok</span>
+                <span>Thriller</span>
+                <span>Psychological</span>
+            </div>
+            <div class="availability unavailable">
+                <span class="dot"></span> Currently borrowed
+            </div>
+        </div>
+
+        <!-- ─── BOOK 3: Ugly Love (Available) ─── -->
+        <div class="book-card" data-status="available">
+            <span class="book-icon">❤️‍🔥</span>
+            <h3>Ugly Love</h3>
+            <p class="book-author">Colleen Hoover</p>
+            <p class="book-description">
+                A raw, emotional romance about two people who agree to keep things casual — until feelings get in the way. Heartbreak and healing await.
+            </p>
+            <div class="book-tags">
+                <span class="tag-booktok">#BookTok</span>
+                <span>Romance</span>
+                <span>Emotional</span>
+            </div>
+            <div class="availability available">
+                <span class="dot"></span> Available to borrow
+            </div>
+        </div>
+
+        <!-- ─── BOOK 4: November 9 (Unavailable) ─── -->
+        <div class="book-card" data-status="unavailable">
+            <span class="book-icon">📅</span>
+            <h3>November 9</h3>
+            <p class="book-author">Colleen Hoover</p>
+            <p class="book-description">
+                A love story spanning years. Fallon and Ben meet on the same date every year — but their connection is tested by secrets and dramatic twists.
+            </p>
+            <div class="book-tags">
+                <span class="tag-booktok">#BookTok</span>
+                <span>Romance</span>
+                <span>Drama</span>
+            </div>
+            <div class="availability unavailable">
+                <span class="dot"></span> Currently borrowed
+            </div>
+        </div>
+
+        <!-- ─── BOOK 5: Fourth Wing (Unavailable) ─── -->
+        <div class="book-card" data-status="unavailable">
+            <span class="book-icon">🐉</span>
+            <h3>Fourth Wing</h3>
+            <p class="book-author">Rebecca Yarros</p>
+            <p class="book-description">
+                Dragons, danger, and an elite war academy. This fantasy juggernaut became one of the biggest BookTok sensations with nearly 800,000 TikTok mentions.
+            </p>
+            <div class="book-tags">
+                <span class="tag-booktok">#BookTok</span>
+                <span>Fantasy</span>
+                <span>Romantasy</span>
+            </div>
+            <div class="availability unavailable">
+                <span class="dot"></span> Currently borrowed
+            </div>
+        </div>
+
+        <!-- ─── BOOK 6: Iron Flame (Available) ─── -->
+        <div class="book-card" data-status="available">
+            <span class="book-icon">⚔️</span>
+            <h3>Iron Flame</h3>
+            <p class="book-author">Rebecca Yarros</p>
+            <p class="book-description">
+                The epic sequel to Fourth Wing. Violet's journey continues with more dragons, more danger, and more romance. Another BookTok obsession.
+            </p>
+            <div class="book-tags">
+                <span class="tag-booktok">#BookTok</span>
+                <span>Fantasy</span>
+                <span>Romantasy</span>
+            </div>
+            <div class="availability available">
+                <span class="dot"></span> Available to borrow
+            </div>
+        </div>
+
+        <!-- ─── BOOK 7: The Silent Patient (Available) ─── -->
+        <div class="book-card" data-status="available">
+            <span class="book-icon">🎨</span>
+            <h3>The Silent Patient</h3>
+            <p class="book-author">Alex Michaelides</p>
+            <p class="book-description">
+                A psychological thriller with a jaw-dropping twist. A painter stops speaking after killing her husband — and a psychotherapist is desperate to uncover her truth.
+            </p>
+            <div class="book-tags">
+                <span class="tag-booktok">#BookTok</span>
+                <span>Thriller</span>
+                <span>Psychological</span>
+            </div>
+            <div class="availability available">
+                <span class="dot"></span> Available to borrow
+            </div>
+        </div>
+
+        <!-- ─── BOOK 8: A Court of Thorns and Roses (Available) ─── -->
+        <div class="book-card" data-status="available">
+            <span class="book-icon">🌹</span>
+            <h3>A Court of Thorns and Roses</h3>
+            <p class="book-author">Sarah J. Maas</p>
+            <p class="book-description">
+                The fantasy romance that started it all. Feyre's journey into the faerie realm captivated millions. A true BookTok phenomenon.
+            </p>
+            <div class="book-tags">
+                <span class="tag-booktok">#BookTok</span>
+                <span>Fantasy</span>
+                <span>Romantasy</span>
+            </div>
+            <div class="availability available">
+                <span class="dot"></span> Available to borrow
+            </div>
+        </div>
+
+        <!-- ─── BOOK 9: A Court of Mist and Fury (Unavailable) ─── -->
+        <div class="book-card" data-status="unavailable">
+            <span class="book-icon">🌟</span>
+            <h3>A Court of Mist and Fury</h3>
+            <p class="book-author">Sarah J. Maas</p>
+            <p class="book-description">
+                The sequel that deepened Feyre's journey with a massive Goodreads rating of 4.64 and over 71,000 TikTok videos. Maas sold over 5 million copies last year alone.
+            </p>
+            <div class="book-tags">
+                <span class="tag-booktok">#BookTok</span>
+                <span>Fantasy</span>
+                <span>Romantasy</span>
+            </div>
+            <div class="availability unavailable">
+                <span class="dot"></span> Currently borrowed
+            </div>
+        </div>
+
+        <!-- ─── BOOK 10: A Good Girl's Guide to Murder (Unavailable) ─── -->
+        <div class="book-card" data-status="unavailable">
+            <span class="book-icon">🔍</span>
+            <h3>A Good Girl's Guide to Murder</h3>
+            <p class="book-author">Holly Jackson</p>
+            <p class="book-description">
+                A YA mystery with true-crime energy. A determined teen reopens a supposedly solved murder in her hometown — perfect for online sleuths.
+            </p>
+            <div class="book-tags">
+                <span class="tag-booktok">#BookTok</span>
+                <span>Mystery</span>
+                <span>YA</span>
+            </div>
+            <div class="availability unavailable">
+                <span class="dot"></span> Currently borrowed
+            </div>
+        </div>
+
+        <!-- ─── BOOK 11: Icebreaker (Available) ─── -->
+        <div class="book-card" data-status="available">
+            <span class="book-icon">⛸️</span>
+            <h3>Icebreaker</h3>
+            <p class="book-author">Hannah Grace</p>
+            <p class="book-description">
+                A spicy college romance that took over BookTok. Figure skater Anastasia and hockey player Nathan navigate rivalry, tension, and unexpected chemistry.
+            </p>
+            <div class="book-tags">
+                <span class="tag-booktok">#BookTok</span>
+                <span>Romance</span>
+                <span>Spicy</span>
+            </div>
+            <div class="availability available">
+                <span class="dot"></span> Available to borrow
+            </div>
+        </div>
+
+        <!-- ─── BOOK 12: The Seven Husbands of Evelyn Hugo (Unavailable) ─── -->
+        <div class="book-card" data-status="unavailable">
+            <span class="book-icon">🎬</span>
+            <h3>The Seven Husbands of Evelyn Hugo</h3>
+            <p class="book-author">Taylor Jenkins Reid</p>
+            <p class="book-description">
+                A Hollywood icon reveals the truth about her seven marriages. A sweeping, emotional story about love, ambition, and sacrifice that broke BookTok.
+            </p>
+            <div class="book-tags">
+                <span class="tag-booktok">#BookTok</span>
+                <span>Historical Fiction</span>
+                <span>Romance</span>
+            </div>
+            <div class="availability unavailable">
+                <span class="dot"></span> Currently borrowed
+            </div>
+        </div>
+
+        <!-- ─── BOOK 13: The Love Hypothesis (Available) ─── -->
+        <div class="book-card" data-status="available">
+            <span class="book-icon">🔬</span>
+            <h3>The Love Hypothesis</h3>
+            <p class="book-author">Ali Hazelwood</p>
+            <p class="book-description">
+                A fake-dating rom-com set in academia. Olive and Adam pretend to date — and things get unexpectedly real. A BookTok favorite with science and spice.
+            </p>
+            <div class="book-tags">
+                <span class="tag-booktok">#BookTok</span>
+                <span>Romance</span>
+                <span>Fake Dating</span>
+            </div>
+            <div class="availability available">
+                <span class="dot"></span> Available to borrow
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ─── TELLER BOOTH CTA ─── -->
+    <div class="teller-cta">
+        <div class="teller-cta-content">
+            <span class="teller-cta-icon">📞</span>
+            <h2>📖 Finished a Book?</h2>
+            <p>
+                Come visit our <span class="pink-text">Teller Booth</span> and 
+                <span class="pink-text">vent</span> about it! 
+                Share how the book made you feel, what you loved, 
+                or just <span class="pink-text">let it all out</span>.
+            </p>
+            <p>
+                You can also leave a <span class="pink-text">written review</span> 
+                in our guest book or online. 
+                Every voice matters in our community! 💕
+            </p>
+            <div class="teller-cta-tags">
+                <span class="cta-tag">📞 Record a Voice Review</span>
+                <span class="cta-tag">✍️ Write a Review</span>
+                <span class="cta-tag">💬 Guest Book</span>
+                <span class="cta-tag">📖 Share Your Story</span>
+            </div>
+            <a href="#teller" class="teller-cta-btn">📍 Visit the Teller Booth</a>
+        </div>
+    </div>
+
+    <!-- ─── FOOTER ─── -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>☕ Coffee&Books</h3>
+                <p>Where great coffee meets great music and even better books.</p>
+            </div>
+            
+            <div class="footer-social">
+                <span>📸 Follow us:</span>
+                <a href="#">Instagram: Coffee&Books</a>
+                <a href="#">TikTok: Cofee&Books</a>
+                <a href="#">YouTube: Coffee&Books</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2026 Coffee&Books. All rights reserved. Made with 💕 and lots of coffee.
+        </div>
+    </footer>
+
+    <!-- ─── FILTER SCRIPT ─── -->
+    <script>
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const bookCards = document.querySelectorAll('.book-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+
+                const filter = this.dataset.filter;
+
+                bookCards.forEach(card => {
+                    const status = card.dataset.status;
+
+                    if (filter === 'all') {
+                        card.style.display = 'flex';
+                    } else if (filter === 'available') {
+                        card.style.display = status === 'available' ? 'flex' : 'none';
+                    } else if (filter === 'unavailable') {
+                        card.style.display = status === 'unavailable' ? 'flex' : 'none';
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
