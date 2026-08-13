@@ -1,0 +1,46 @@
+# Nmap 7.94SVN scan initiated Tue Aug 11 17:03:51 2026 as: nmap -sV -oN nmap_scan_results.txt localhost
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.00023s latency).
+Other addresses for localhost (not scanned): ::1
+Not shown: 996 closed tcp ports (conn-refused)
+PORT     STATE SERVICE         VERSION
+22/tcp   open  ssh             OpenSSH 9.6p1 Ubuntu 3ubuntu13.18 (Ubuntu Linux; protocol 2.0)
+900/tcp  open  omginitialrefs?
+981/tcp  open  http            Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+2222/tcp open  ssh             OpenSSH 9.6p1 Ubuntu 3ubuntu13.18 (Ubuntu Linux; protocol 2.0)
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port900-TCP:V=7.94SVN%I=7%D=8/11%Time=6A7B55FD%P=x86_64-pc-linux-gnu%r(
+SF:GetRequest,E8,"HTTP/1\.0\x20200\x20OK\r\nContent-Length:\x2017\r\nConte
+SF:nt-Type:\x20application/text\r\nDate:\x20Tue,\x2011\x20Aug\x202026\x201
+SF:7:03:57\x20GMT\r\nMetadata-Flavor:\x20Google\r\nServer:\x20Metadata\x20
+SF:Server\x20for\x20VM\r\nX-Frame-Options:\x20SAMEORIGIN\r\nX-Xss-Protecti
+SF:on:\x200\r\n\r\ncomputeMetadata/\n")%r(GenericLines,67,"HTTP/1\.1\x2040
+SF:0\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\
+SF:nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(HTTPOptions,729,
+SF:"HTTP/1\.0\x20405\x20Method\x20Not\x20Allowed\r\nContent-Length:\x20159
+SF:2\r\nContent-Type:\x20text/html;\x20charset=UTF-8\r\nDate:\x20Tue,\x201
+SF:1\x20Aug\x202026\x2017:03:57\x20GMT\r\nMetadata-Flavor:\x20Google\r\nSe
+SF:rver:\x20Metadata\x20Server\x20for\x20VM\r\nX-Frame-Options:\x20SAMEORI
+SF:GIN\r\nX-Xss-Protection:\x200\r\n\r\n<!DOCTYPE\x20html>\n<html\x20lang=
+SF:en>\n\x20\x20<meta\x20charset=utf-8>\n\x20\x20<meta\x20name=viewport\x2
+SF:0content=\"initial-scale=1,\x20minimum-scale=1,\x20width=device-width\"
+SF:>\n\x20\x20<title>Error\x20405\x20\(Method\x20Not\x20Allowed\)!!1</titl
+SF:e>\n\x20\x20<style>\n\x20\x20\x20\x20\*{margin:0;padding:0}html,code{fo
+SF:nt:15px/22px\x20arial,sans-serif}html{background:#fff;color:#222;paddin
+SF:g:15px}body{margin:7%\x20auto\x200;max-width:390px;min-height:180px;pad
+SF:ding:30px\x200\x2015px}\*\x20>\x20body{background:url\(//www\.google\.c
+SF:om/images/errors/robot\.png\)\x20100%\x205px\x20no-repeat;padding-right
+SF::205px}p{margin:11px\x200\x2022px;overflow:hidden}ins{color:#777;text-d
+SF:ecoration:none}a\x20img{border:0}@media\x20screen\x20and\x20\(max-width
+SF::772px\){body{background:none;margin-top:0;max-widt")%r(RTSPRequest,67,
+SF:"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20
+SF:charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(
+SF:Help,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/pl
+SF:ain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Requ
+SF:est")%r(SSLSessionReq,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent
+SF:-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n4
+SF:00\x20Bad\x20Request");
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Aug 11 17:05:18 2026 -- 1 IP address (1 host up) scanned in 87.55 seconds
